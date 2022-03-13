@@ -25,8 +25,8 @@ app.route("/")
     })
     .post((req, res)=>{
         const { username, password } = req.body;
-        const validUname = process.env.uname;
-        const validPass = process.env.pass;
+        const validUname = "uname";
+        const validPass = "pass";
 
         if(username===validUname && password===validPass){
             let loginID = Number(new Date().getTime())
